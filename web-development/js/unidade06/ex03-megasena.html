@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Aulas de Javascript</title>
+        <script>
+            var megasena = new Array();
+            var sorteio;
+            var i = 0;
+            function ordenarNumeros(a,b) {
+                return a-b;
+            }
+            while (i<6) {
+                sorteio=Math.ceil(Math.random()*60);
+                if (megasena.indexOf(sorteio) < 0) {
+                    megasena[i] = sorteio;
+                    i++;
+                }
+                
+            }
+            megasena.sort(ordenarNumeros);
+            console.log(megasena);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
